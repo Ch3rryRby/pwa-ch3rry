@@ -1,25 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Hello Kitty</title>
-  <style>
-    body {
-      background-color: pink;  /* Fundo rosa */
-      text-align: center;       /* Texto no meio */
-      font-family: Arial, sans-serif , sans-serif;
-    }
-    h1 {
-      color: white;             /* Título branco */
-    }
-    img {
-      width: 200px;             /* Tamanho da imagem */
-      margin-top: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Kitty Receitas</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffb6d9, #ffd9eb);
+    text-align:center;
+    color:#444;
+}
+
+header{
+    padding:30px;
+}
+
+h1{
+    color:white;
+    text-shadow:2px 2px 5px #ff69b4;
+}
+
+img{
+    width:220px;
+    margin:15px;
+}
+
+.menu{
+    margin:20px;
+}
+
+button{
+    background:#ff69b4;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    margin:5px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1493;
+    transform:scale(1.05);
+}
+
+.card{
+    display:none;
+    background:white;
+    max-width:600px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer{
+    margin:30px;
+    color:white;
+}
+</style>
 </head>
+
 <body>
-  <h1>Bem-vindo ao mundo da Hello Kitty!</h1>
-  <img src="https://www.pngarts.com/pt/explore/249615/download/249614" alt="Hello Kitty">
-  <p>by ch3rry</p>
+
+<header>
+    <h1>🎀 Mundo da Hello Kitty Receitas 🎀</h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Hello_Kitty_character_portrait.png" alt="Hello Kitty">
+
+    <p>Escolha uma receita deliciosa!</p>
+</header>
+
+<div class="menu">
+    <button onclick="mostrar('bolo')">🍰 Bolo</button>
+    <button onclick="mostrar('torta')">🥧 Torta</button>
+    <button onclick="mostrar('pudim')">🍮 Pudim</button>
+    <button onclick="mostrar('doces')">🍬 Doces</button>
+</div>
+
+<div id="bolo" class="card">
+    <h2>🍰 Bolo de Chocolate</h2>
+    <p><strong>Ingredientes:</strong></p>
+    <p>2 ovos, 2 xícaras de farinha, 1 xícara de açúcar, 1 xícara de leite, 1/2 xícara de chocolate em pó.</p>
+    <br>
+    <p><strong>Modo de preparo:</strong></p>
+    <p>Misture tudo, coloque em forma untada e asse por 40 minutos a 180°C.</p>
+</div>
+
+<div id="torta" class="card">
+    <h2>🥧 Torta de Morango</h2>
+    <p><strong>Ingredientes:</strong></p>
+    <p>Massa pronta, creme de confeiteiro e morangos.</p>
+    <br>
+    <p><strong>Modo de preparo:</strong></p>
+    <p>Monte a torta com a massa, recheie com creme e cubra com morangos.</p>
+</div>
+
+<div id="pudim" class="card">
+    <h2>🍮 Pudim de Leite</h2>
+    <p><strong>Ingredientes:</strong></p>
+    <p>1 lata de leite condensado, 2 medidas de leite e 3 ovos.</p>
+    <br>
+    <p><strong>Modo de preparo:</strong></p>
+    <p>Bata tudo no liquidificador e asse em banho-maria por cerca de 1 hora.</p>
+</div>
+
+<div id="doces" class="card">
+    <h2>🍬 Brigadeiro</h2>
+    <p><strong>Ingredientes:</strong></p>
+    <p>1 lata de leite condensado, 1 colher de manteiga e 4 colheres de chocolate em pó.</p>
+    <br>
+    <p><strong>Modo de preparo:</strong></p>
+    <p>Cozinhe mexendo até desgrudar da panela. Enrole e passe no granulado.</p>
+</div>
+
+<footer>
+    <p>💖 Feito por ch3rry 💖</p>
+</footer>
+
+<script>
+function mostrar(id){
+
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        card.style.display = "none";
+    });
+
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
 </body>
 </html>
