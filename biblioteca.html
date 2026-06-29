@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Biblioteca</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+
+background:#fff5fa;
+
+display:block;
+
+height:auto;
+
+}
+
+header{
+
+background:#ff69b4;
+
+padding:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:white;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+width:70px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:20px;
+
+font-weight:bold;
+
+}
+
+nav a:hover{
+
+text-decoration:underline;
+
+}
+
+h2{
+
+text-align:center;
+
+margin:40px 0;
+
+color:#ff1493;
+
+}
+
+.biblioteca{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+padding:30px;
+
+}
+
+.livro{
+
+background:white;
+
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.livro:hover{
+
+transform:translateY(-10px);
+
+}
+
+.livro img{
+
+width:150px;
+
+margin-bottom:15px;
+
+}
+
+.livro h3{
+
+color:#ff1493;
+
+margin-bottom:10px;
+
+}
+
+.livro p{
+
+margin-bottom:20px;
+
+color:#666;
+
+}
+
+.botao{
+
+display:inline-block;
+
+background:#ff69b4;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:15px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+.botao:hover{
+
+background:#ff1493;
+
+}
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+color:#666;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/0/05/Hello_Kitty_character_portrait.png">
+
+<h1>Hello Kitty Recipe Library</h1>
+
+</div>
+
+<nav>
+
+<a href="biblioteca.html">Biblioteca</a>
+
+<a href="sobre.html">Sobre Mim</a>
+
+<a href="index.html">Sair</a>
+
+</nav>
+
+</header>
+
+<h2>Escolha um Livro de Receitas 📚</h2>
+
+<div class="biblioteca">
+
+<div class="livro">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png">
+
+<h3>🍰 Bolos</h3>
+
+<p>Receitas deliciosas de bolos caseiros.</p>
+
+<a href="bolo.html" class="botao">Abrir Livro</a>
+
+</div>
+
+<div class="livro">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png">
+
+<h3>🍪 Cookies</h3>
+
+<p>Cookies macios e crocantes.</p>
+
+<a href="cookies.html" class="botao">Abrir Livro</a>
+
+</div>
+
+<div class="livro">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png">
+
+<h3>🍮 Pudins</h3>
+
+<p>Receitas tradicionais.</p>
+
+<a href="pudim.html" class="botao">Abrir Livro</a>
+
+</div>
+
+<div class="livro">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png">
+
+<h3>🍓 Sobremesas</h3>
+
+<p>Doces para todas as ocasiões.</p>
+
+<a href="sobremesas.html" class="botao">Abrir Livro</a>
+
+</div>
+
+<div class="livro">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png">
+
+<h3>🍫 Brigadeiros</h3>
+
+<p>Receitas irresistíveis.</p>
+
+<a href="brigadeiro.html" class="botao">Abrir Livro</a>
+
+</div>
+
+<div class="livro">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png">
+
+<h3>🧁 Cupcakes</h3>
+
+<p>Cupcakes decorados.</p>
+
+<a href="cupcake.html" class="botao">Abrir Livro</a>
+
+</div>
+
+</div>
+
+<footer>
+
+💕 Biblioteca Hello Kitty - Desenvolvido por Cherry 💕
+
+</footer>
+
+</body>
+</html>
